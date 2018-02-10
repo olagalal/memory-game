@@ -128,8 +128,8 @@ h1, h2{
 
 /* Styles for win container*/
 .win-container {
-    margin: 2em auto 1em auto;
-    padding: 2em 0;
+    margin: 3em auto 1em auto;
+    padding: 8em 0;
     width: 100%;
     max-width: 660px;
     min-height: 580px;
