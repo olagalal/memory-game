@@ -132,21 +132,17 @@ function initStars() {
 
 // Rules of Stars
 function updateStars() {
-    if (moves <= 12) {
+    if (moves <= 16) {
         $('.stars .fa').addClass("fa-star");
         stars = 3;
-    } else if(moves >= 13 && moves <= 14){
+    } else if(moves >= 17 && moves <= 25){
         $('.stars li:last-child .fa').removeClass("fa-star");
         $('.stars li:last-child .fa').addClass("fa-star-o");
         stars = 2;
-    } else if (moves >= 15 && moves <20){
+    } else {
         $('.stars li:nth-child(2) .fa').removeClass("fa-star");
         $('.stars li:nth-child(2) .fa').addClass("fa-star-o");
         stars = 1;
-    } else if (moves >=20){
-        $('.stars li .fa').removeClass("fa-star");
-        $('.stars li .fa').addClass("fa-star-o");
-        stars = 0;
     }
     $('.win-container .stars-number').text(stars);
 
